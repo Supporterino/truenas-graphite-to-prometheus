@@ -14,4 +14,5 @@ Once in the edit view you have to adjust three fields to match your later desire
 * The prefix for the graphite metrics need to be set to `truenas` for the mapping file to work
 * The hostname field should be choosen according to your needs it will later populate the `instance` label of your metrics
 * The update every field should match your scrape time
+
 ![Screenshot 2023-12-20 at 22 40 14](https://github.com/Supporterino/truenas-graphite-to-prometheus/assets/25184990/5a6cfd79-42ae-4173-bee5-42bb1d43d7b9)
