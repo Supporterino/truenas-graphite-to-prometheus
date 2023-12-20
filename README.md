@@ -16,3 +16,5 @@ Once in the edit view you have to adjust three fields to match your later desire
 * The update every field should match your scrape time
 
 ![Screenshot 2023-12-20 at 22 40 14](https://github.com/Supporterino/truenas-graphite-to-prometheus/assets/25184990/5a6cfd79-42ae-4173-bee5-42bb1d43d7b9)
+
+The destination ip and port need to be set to target your `graphite_exporter` I won't cover the setup process of this tool since it was already present for me. Feel free to open a PR with an recommended install method.
