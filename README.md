@@ -163,6 +163,36 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`nfs_proc4`|`op` type of proc4 call|`calls/s`|The number of nfs v4 calls per second.|
 |`nfs_proc4ops`|`op` operation of proc4|`ops/s`|The number of protocol 4 operations called by the server.|
 
+### ZFS
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`zfs_arc_size`|`op` kind of target|`MiB`|Size of the different arc cache types.|
+|`zfs_l2_size`|`op` kind of target|`MiB`|Size of the l2 cache objects.|
+|`zfs_reads`|`op` target of the read command|`reads/s`|Number of reads on the diffrent parts of zfs.|
+|`zfs_hits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_hits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_dhits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_dhits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_phits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_phits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_mhits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_mhits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_l2hits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_l2hits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_list_hits`|`op` type of lists|`hits/s`|Number of hits per list per second.|
+|`zfs_arc_size_breakdown`|`op` type of arc cache|`percent`|Percent for each type of arc of the total arc size.|
+|`zfs_important_ops`|`op` type of operation|`ops/s`|Number of important zfs operations.|
+|`zfs_actual_hits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_actual_hits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_demand_data_hits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_demand_data_hits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_prefetch_data_hits`|`op` hit or miss type|`percent`|Percentage for the type of cache hit.|
+|`zfs_prefetch_data_hits_rate`|`op` hit or miss type|`events/s`|Number of hits for the type of cache hit.|
+|`zfs_hash_elements`|`op` current, max|`elements`|Number of hash elements present and maximum.|
+|`zfs_hash_chains`|`op` current, max|`chains`|Number of hash chains present and maximum.|
+|`zfs_pool`|<ul><li>`pool` name of the pool</li><li>`state`</li></ul>|`boolean`|Shows the states of the pool with boolean indicating if they are active.|
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
