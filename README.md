@@ -118,6 +118,21 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`disk_io_size`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`KiB/ops`|The average size of an I/O operation by operation type.|
 |`system_io`|`op` type of operation|`KiB/s`|The total in and out traffic of the TrueNAS system.|
 
+### Network interfaces
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`interface_io`|<ul><li>`interface` name of the interface</li><li>`op` type of operation</li></ul>|`kilobits/s`|The I/O operations of an individual interface devided by the kind of operation.|
+|`interface_speed`|`interface` name of the interface|`kilobits/s`|The maximum speed of an interface.|
+|`interface_duplex`|<ul><li>`interface` name of the interface</li><li>`state` type of duplex</li></ul>|`boolean`|Indicates which duplex state an interface is active in.|
+|`interface_operationstate`|<ul><li>`interface` name of the interface</li><li>`state` type of operationstate</li></ul>|`boolean`|Indicates in which operation state an interface is.|
+|`interface_carrierstate`|<ul><li>`interface` name of the interface</li><li>`state` type of carrierstate</li></ul>|`boolean`|Indicates in which carrier state an interface is.|
+|`interface_mtu`|`interface` name of the interface|`octets`|The mtu of the interface.|
+|`interface_packets`|<ul><li>`interface` name of the interface</li><li>`op` type of operation</li></ul>|`packets/s`|Amount of packets per interface and type of operation.|
+|`system_net_io`|`op` type of operation|`kilobits/s`|The total in and out traffic of the network of the TrueNAS system.|
+|`interface_errors`|<ul><li>`interface` name of the interface</li><li>`op` direction of traffic</li></ul>|`erros/s`|Amount of packets erros per interface and direction of traffic.|
+|`interface_drops`|<ul><li>`interface` name of the interface</li><li>`op` direction of traffic</li></ul>|`drops/s`|Amount of packets drops per interface and direction of traffic.|
+
 ### CPU
 
 |Metric name|Labels|Unit|Description|
