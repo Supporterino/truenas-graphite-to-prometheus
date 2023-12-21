@@ -117,6 +117,20 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`disk_await`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`ms/ops`|The average time an operations needs to be completed. Includes queue time and execution time.|
 |`disk_io_size`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`KiB/ops`|The average size of an I/O operation by operation type.|
 
+### CPU
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`interrupts`|`kind` defines type of interrupt. `hard` = top half, `soft` = bottom half|`interrupts/s`|Number of interrupts in the total system.|
+|`cpu_softirq`|`cpu` defines the core|`interrupts/s`|Number of softirq interrupts per core.|
+|`context_switches`||`context switches/s`|The number of context switches of the whole system.|
+|`cpu_total`|`kind` type of cpu usage|`percent`|Shows the total cpu consumption of the system by type.|
+|`cpu_temperature`|`cpu` defines the core|`°C`|The temperature of each physical cpu core.|
+|`cpu_throttling`|`cpu` defines the core|`events/s`|The number of events which get held back for processing by the core.|
+|`cpu_frequency`|`cpu` defines the core|`MHz`|The speed of the cpu core.|
+|`cpu_idlestate`|<ul><li>`cpu` defines the core</li><li>`state` the corresponding C-state</li></ul>|`percent`|The percent of time spent in the C-state.|
+|`cpu_usage`|<ul><li>`cpu` defines the core</li><li>`kind` type of cpu usage</li></ul>|`percent`|Shows consumption per core and type.|
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
