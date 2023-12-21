@@ -94,8 +94,15 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 
 |Metric name|Labels|Value|Description|
 |-----------|------|-----|-----------|
-|`physical_memory`|`kind` defines the memory type like free, used, etc...|`bytes`|The `physical_memory` metric shows the basic usage of the actual physical memory.|
-|`swap`|`kind` defines the type of free or used|`bytes`|Shows the statistic about the swap. The free value shows the actual reserved swap of the system.|
+|`physical_memory`|`kind` defines the memory type like free, used, etc...|`MiB`|The `physical_memory` metric shows the basic usage of the actual physical memory.|
+|`swap`|`kind` defines the type of free or used|`MiB`|Shows the statistic about the swap. The free value shows the actual reserved swap of the system.|
+|`memory_kernel`|`kind` the resource of the kernel|`MiB`|Break down of the memory internals of the kernel. More information [here](https://blog.netdata.cloud/unlock-the-secrets-of-kernel-memory-usage/)|
+|`memory_available`||`MiB`|The amount of memory available to the whole system|
+|`memory_comitted`||`MiB`|Comitted memory|
+|`memory_slab`|`kind` describes the type of slab memory|`MiB`|Detailed metrics about the kernel slab memory in respect of claimability.|
+|`memory_transparent_hugepages`|`kind` owner of the hugepage|`MiB`|The size of the hugepages in respect of their owner via the `kind` label.|
+|`memory_writeback`|`kind` type of writeback operation|`MiB`|Size of the idividual writeback memory types.|
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
