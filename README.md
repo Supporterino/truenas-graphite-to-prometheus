@@ -144,6 +144,9 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |Metric name|Labels|Unit|Description|
 |-----------|------|----|-----------|
 |`uptime`||`seconds`|The uptime of the system.|
+|`clock_synced`||`boolean`|Indicator if the system clock is synced against ntp.|
+|`clock_status`|`state` type of error|`boolean`|Indicator what failed during the ntp sync.|
+|`clock_offset`||`ms`|Offset of the local system clock compared to ntp server.|
 
 ### System Load
 
