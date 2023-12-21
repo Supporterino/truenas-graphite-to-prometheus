@@ -22,8 +22,17 @@
       <ul>
         <li><a href="#common-labels">Common labels</a></li>
         <li><a href="#memory">Memory</a></li>
+        <li><a href="#disks">Disks</a></li>
+        <li><a href="#network-interfaces">Network interfaces</a></li>
+        <li><a href="#cpu">CPU</a></li>
+        <li><a href="#processes">Processes</a></li>
+        <li><a href="#uptime">Uptime + NTP</a></li>
+        <li><a href="#system-load">System Load</a></li>
+        <li><a href="#nfs">NFS</a></li>
+        <li><a href="#zfs">ZFS</a></li>
       </ul>
     </li>
+    <li><a href="#dashboards">Dashboards</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </details>
@@ -211,6 +220,10 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`zfs_hash_chains`|`op` current, max|`chains`|Number of hash chains present and maximum.|
 |`zfs_pool`|<ul><li>`pool` name of the pool</li><li>`state`</li></ul>|`boolean`|Shows the states of the pool with boolean indicating if they are active.|
 
+<!-- DASHBOARDS -->
+## Dashboards
+
+The dasboards are located inside the `dashboards` folder and are simple json files which can be imported into grafana und used with the metrics.
 
 <!-- CONTRIBUTING -->
 ## Contributing
