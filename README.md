@@ -151,6 +151,19 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |-----------|------|----|-----------|
 |`system_load`|`kind` type of load sampling (1,5,15)|`load`|The load of the complete system in linux load numbers.|
 
+### NFS
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`nfs_readcache`|`op` type of operation on cache|`reads/s`|Defines the number of reads of each kind of operation on the nfs readcache.|
+|`nfs_io`|`op` operation type|`kilobytes/s`|The load on the nfs server by each operation.|
+|`nfs_threads`||`threads`|Number of threads the nfs server is using.|
+|`nfs_net`|`op` type of network|`packets/s`|The number of packtes per protocol which get handeled by the nfs server.|
+|`nfs_rpc`|`op` type of rpc|`calls/s`|Number of remote procedure calls on the server api.|
+|`nfs_proc4`|`op` type of proc4 call|`calls/s`|The number of nfs v4 calls per second.|
+|`nfs_proc4ops`|`op` operation of proc4|`ops/s`|The number of protocol 4 operations called by the server.|
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
