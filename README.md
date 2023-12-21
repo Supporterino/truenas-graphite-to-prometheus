@@ -116,6 +116,7 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`disk_qops`|`disk` name of the disk|`ops`|The number of currently active operations on the disk.|
 |`disk_await`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`ms/ops`|The average time an operations needs to be completed. Includes queue time and execution time.|
 |`disk_io_size`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`KiB/ops`|The average size of an I/O operation by operation type.|
+|`system_io`|`op` type of operation|`KiB/s`|The total in and out traffic of the TrueNAS system.|
 
 ### CPU
 
@@ -130,6 +131,25 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`cpu_frequency`|`cpu` defines the core|`MHz`|The speed of the cpu core.|
 |`cpu_idlestate`|<ul><li>`cpu` defines the core</li><li>`state` the corresponding C-state</li></ul>|`percent`|The percent of time spent in the C-state.|
 |`cpu_usage`|<ul><li>`cpu` defines the core</li><li>`kind` type of cpu usage</li></ul>|`percent`|Shows consumption per core and type.|
+
+### Processes
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`processes_forks`||`processes/s`|Number of processes which get forked.|
+|`processes`|`kind` type of process|`processes`|Number of processes in the appropriate states.|
+
+### Uptime
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`uptime`||`seconds`|The uptime of the system.|
+
+### System Load
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`system_load`|`kind` type of load sampling (1,5,15)|`load`|The load of the complete system in linux load numbers.|
 
 <!-- CONTRIBUTING -->
 ## Contributing
