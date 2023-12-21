@@ -92,9 +92,10 @@ All metrics share a pair of common labels. The first label is the `job` label wh
 
 Both memeory statistics from TrueNAS are exported on the onside the physical memory statistics and the in depth memory statistics which translates to the following metrics.
 
-|metric name|labels|description|
-|-----------|------|-----------|
-
+|Metric name|Labels|Value|Description|
+|-----------|------|-----|-----------|
+|`physical_memory`|`kind` defines the memory type like free, used, etc...|`bytes`|The `physical_memory` metric shows the basic usage of the actual physical memory.|
+|`swap`|`kind` defines the type of free or used|`bytes`|Shows the statistic about the swap. The free value shows the actual reserved swap of the system.|
 
 <!-- CONTRIBUTING -->
 ## Contributing
