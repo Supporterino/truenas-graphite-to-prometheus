@@ -103,6 +103,19 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`memory_transparent_hugepages`|`kind` owner of the hugepage|`MiB`|The size of the hugepages in respect of their owner via the `kind` label.|
 |`memory_writeback`|`kind` type of writeback operation|`MiB`|Size of the idividual writeback memory types.|
 
+### Disks
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`disk_io`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`KiB`|The I/O operations of an individual disk devided by the kind of operation.|
+|`disk_io_ops`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`ops/sec`|The amount of I/O operations per disk and operation type.|
+|`disk_io_backlog`|`disk` name of the disk|`ms`|Shows the time an operation remains in the backlog of the disk and awaits the execution.|
+|`disk_busy`|`disk` name of the disk|`ms`|The amount of time the disk was busy with I/O operations.|
+|`disk_utilization`|`disk` name of the disk|`percent`|Percent of time the disk was busy doing any operation. Modern SSDs can do multiple operations in parallel so a high value ins't necesarly a warning.|
+|`disk_iotime`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`ms/s`|The sum of the duration of all completed I/O operations.|
+|`disk_qops`|`disk` name of the disk|`ops`|The number of currently active operations on the disk.|
+|`disk_await`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`ms/ops`|The average time an operations needs to be completed. Includes queue time and execution time.|
+|`disk_io_size`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`KiB/ops`|The average size of an I/O operation by operation type.|
 
 <!-- CONTRIBUTING -->
 ## Contributing
