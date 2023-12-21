@@ -17,6 +17,13 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#exposed-metrics">Exposed metrics</a>
+      <ul>
+        <li><a href="#common-labels">Common labels</a></li>
+        <li><a href="#memory">Memory</a></li>
+      </ul>
+    </li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </details>
@@ -76,6 +83,18 @@ To utilise the provided `graphite_mapping.conf` replace your existing conf of yo
 ## Exposed metrics
 
 The graphite metrics are getting transformed into the following prometheus metrics. The metrics are grouped by their source and each metrics is explained with their labels and usecase.
+
+### Common labels
+
+All metrics share a pair of common labels. The first label is the `job` label which is set to `truenas` for each metric to identify the metrics from TrueNAS. The second label is the `instance` label. The value of the is directly related to the `hostname` field from the [Getting Started](#getting-started) section and can be used to identify the host from which the metrics come. This is useful once you have multiple TrueNAS instances.
+
+### Memory
+
+Both memeory statistics from TrueNAS are exported on the onside the physical memory statistics and the in depth memory statistics which translates to the following metrics.
+
+|metric name|labels|description|
+|-----------|------|-----------|
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
