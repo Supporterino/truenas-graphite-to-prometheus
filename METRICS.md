@@ -35,6 +35,7 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`disk_await`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`ms/ops`|The average time an operations needs to be completed. Includes queue time and execution time.|
 |`disk_io_size`|<ul><li>`disk` name of the disk</li><li>`op` type of operation</li></ul>|`KiB/ops`|The average size of an I/O operation by operation type.|
 |`system_io`|`op` type of operation|`KiB/s`|The total in and out traffic of the TrueNAS system.|
+|`disk_temperature`|`serial` disk serial|`°C`|Temperature of each disk in celcius.|
 
 ## Network interfaces
 
