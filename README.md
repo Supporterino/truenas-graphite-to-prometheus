@@ -69,13 +69,21 @@ See the [open issues]([https://github.com/github_username/repo_name](https://git
 
 ### TrueNAS Scale
 
-Inside of TrueNAS you have to open the `Reporting` tab and then click the `Exporters` button to adjust the already present graphite exporter by hitting the edit icon.
+TrueNAS SCALE has its own ability to export reporting data to other apps or charts in the Graphite protocol (e.g. Netdata, Prometheus/Grafana). 
+
+To create or edit the reporter for use with Prometheus:
+1. Go to the `Reporting` tab and click the `Exporters` button on the top right.
+2. Click `Add` to create a new reporter or click the `Edit` pencil icon next to the reporter you wish to use.
+
 ![Screenshot 2023-12-20 at 22 38 49](https://github.com/Supporterino/truenas-graphite-to-prometheus/assets/25184990/228eec2b-e612-4772-8bde-440ac3bcaef4)
-Once in the edit view you have to adjust three fields to match your later desired metrics.
+
+Ensure the following fields are adjusted depending on your target app or chart, as outlined in the [TrueNAS instructions](https://www.truenas.com/docs/scale/scaleuireference/reportingscreensscale/).
+
 * The prefix for the graphite metrics need to be set to `truenas` for the mapping file to work
 * The hostname field should be choosen according to your needs it will later populate the `instance` label of your metrics
-* The update every field should match your scrape time
-
+* The `update every` field should match your scrape time
+* For `Send Names Instead Of Ids`, leave it blank and it will default to `true` (otherwise it may error out when trying to create the exporter).
+ 
 ![Screenshot 2023-12-20 at 22 40 14](https://github.com/Supporterino/truenas-graphite-to-prometheus/assets/25184990/5a6cfd79-42ae-4173-bee5-42bb1d43d7b9)
 
 The destination ip and port need to be set to target your `graphite_exporter` I won't cover the setup process of this tool since it was already present for me. Feel free to open a PR with an recommended install method.
