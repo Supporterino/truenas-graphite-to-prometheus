@@ -19,7 +19,6 @@ env:
 jobs:
   build:
     runs-on: k8s-runner
-    container: ubuntu:latest
     permissions:
       contents: read
       packages: write
