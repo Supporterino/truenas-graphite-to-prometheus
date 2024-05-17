@@ -9,6 +9,7 @@
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#supported-versions"></a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -66,13 +67,13 @@ See the [open issues]([https://github.com/github_username/repo_name](https://git
 
 <!-- Supported versions -->
 ## Supported Versions
-Those are the supported and tested versions of TrueNAS in combination with this exporter.
+Those are the supported and tested versions of TrueNAS in combination with this exporter. Feel free to create a PR with a tested flag if you use a version not mentioned here.
 |TrueNAS Version|Supported|Tested|
 |---------------|---------|------|
 |23.10.0|:grey_question: (should work)|:x:|
-|23.10.1|:white_check_mark:|:white_check_mark:|
-|23.10.2|:white_check_mark:|:white_check_mark:|
-|24.04|:white_check_mark:|:white_check_mark:|
+|23.10.1|:white_check_mark:|:white_check_mark: by [@Supporterino] (https://www.github.com/Supporterino)|
+|23.10.2|:white_check_mark:|:white_check_mark: by [@Supporterino] (https://www.github.com/Supporterino)|
+|24.04|:white_check_mark:|:white_check_mark: by [@Supporterino] (https://www.github.com/Supporterino)|
 
 
 <!-- GETTING STARTED -->
