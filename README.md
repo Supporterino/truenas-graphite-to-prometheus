@@ -71,9 +71,9 @@ Those are the supported and tested versions of TrueNAS in combination with this 
 |TrueNAS Version|Supported|Tested|
 |---------------|---------|------|
 |23.10.0|:grey_question: (should work)|:x:|
-|23.10.1|:white_check_mark:|:white_check_mark: by [@Supporterino] (https://www.github.com/Supporterino)|
-|23.10.2|:white_check_mark:|:white_check_mark: by [@Supporterino] (https://www.github.com/Supporterino)|
-|24.04|:white_check_mark:|:white_check_mark: by [@Supporterino] (https://www.github.com/Supporterino)|
+|23.10.1|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|23.10.2|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|24.04|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
 
 
 <!-- GETTING STARTED -->
