@@ -57,12 +57,23 @@ The goal of this small repository is to provide you with a new `graphite_mapping
 - [x] Getting basic metrics extraction working
 - [x] Documentation
     - [x] Start of git project
-    - [ ] Fully detailed list of all metrics
-    - [ ] Multiple dashboards with pictures
-- [ ] Convert all metrics to prometheus metrics without catch all rules
-- [ ] Unify all metrics to a similar schema
+    - [x] Fully detailed list of all metrics
+    - [x] Multiple dashboards with pictures
+- [x] Convert all metrics to prometheus metrics without catch all rules
+- [x] Unify all metrics to a similar schema
 
 See the [open issues]([https://github.com/github_username/repo_name](https://github.com/Supporterino/truenas-graphite-to-prometheus)/issues) for a full list of proposed features (and known issues).
+
+<!-- Supported versions -->
+## Supported Versions
+Those are the supported and tested versions of TrueNAS in combination with this exporter.
+|TrueNAS Version|Supported|Tested|
+|---------------|---------|------|
+|23.10.0|:grey_question: (should work)|:x:|
+|23.10.1|:white_check_mark:|:white_check_mark:|
+|23.10.2|:white_check_mark:|:white_check_mark:|
+|24.04|:white_check_mark:|:white_check_mark:|
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
