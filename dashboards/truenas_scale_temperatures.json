@@ -405,7 +405,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Temperature Overview",
+  "title": "TrueNAS Scale - Temperature Overview",
   "uid": "temperature_overview",
   "version": 1,
   "weekStart": ""
