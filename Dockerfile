@@ -1,4 +1,4 @@
-FROM prom/graphite-exporter:v0.15.1
+FROM prom/graphite-exporter:v0.15.2
 
 COPY graphite_mapping.conf /config/graphite_mapping.conf
 
