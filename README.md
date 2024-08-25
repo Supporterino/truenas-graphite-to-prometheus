@@ -9,7 +9,7 @@
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#supported-versions"></a></li>
+    <li><a href="#supported-versions">Supported versions</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
