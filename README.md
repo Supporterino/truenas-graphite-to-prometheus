@@ -21,18 +21,6 @@
     <li><a href="#usage">Usage</a></li>
     <li>
       <a href="#exposed-metrics">Exposed metrics</a>
-      <ul>
-        <li><a href="#common-labels">Common labels</a></li>
-        <li><a href="#memory">Memory</a></li>
-        <li><a href="#disks">Disks</a></li>
-        <li><a href="#network-interfaces">Network interfaces</a></li>
-        <li><a href="#cpu">CPU</a></li>
-        <li><a href="#processes">Processes</a></li>
-        <li><a href="#uptime">Uptime + NTP</a></li>
-        <li><a href="#system-load">System Load</a></li>
-        <li><a href="#nfs">NFS</a></li>
-        <li><a href="#zfs">ZFS</a></li>
-      </ul>
     </li>
     <li><a href="#dashboards">Dashboards</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -73,7 +61,9 @@ Those are the supported and tested versions of TrueNAS in combination with this 
 |23.10.0|:grey_question: (should work)|:x:|
 |23.10.1|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
 |23.10.2|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
-|24.04|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|24.04.0|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|24.04.1|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|24.04.2|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
 
 
 <!-- GETTING STARTED -->
