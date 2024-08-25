@@ -21,8 +21,10 @@ jobs:
     - uses: actions/stale@v9
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'Stale issue message'
-        stale-pr-message: 'Stale pull request message'
+        stale-issue-message: 'Stale issue please continue activity or it is closed in 7 days.'
+        close-issue-message: 'Closed due to inactivity'
+        stale-pr-message: 'Stale pull request, will be closed in 7 days.'
+        close-pr-message: 'Closed due to inactivity'
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
         days-before-stale: 30
