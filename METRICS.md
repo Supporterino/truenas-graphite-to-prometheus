@@ -134,7 +134,7 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 
 |Metric name|Labels|Unit|Description|
 |-----------|------|----|-----------|
-|`k3s_pod_cpu`|`pod` the pod name|`unknown`|A number that represents the cpu usage of the pod. (no documentation)|
+|`k3s_pod_cpu`|`pod` the pod name|`ms/ns`|A number that represents the cpu usage of the pod. (cpu time in ms or ns needs to be tested)|
 |`k3s_pod_mem`|`pod` the pod name|`bytes`|The number of bytes of memory this pod is using.|
 |`k3s_pod_net`|<ul><li>`pod` the pod name</li><li>`direction` the direction of network traffic</li></ul>|`bytes`|The number of bytes in/out of the pod over the network interface.|
 
