@@ -1011,7 +1011,7 @@
           "query": "label_values(k3s_pod_cpu{instance=\"$instance\"},pod)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
-        "refresh": 1,
+        "refresh": 2,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -1027,6 +1027,6 @@
   "timezone": "browser",
   "title": "TrueNAS Scale - Applications (k3s)",
   "uid": "cdzehbg69wav4c",
-  "version": 17,
+  "version": 18,
   "weekStart": ""
 }
