@@ -166,7 +166,7 @@
           "refId": "A"
         }
       ],
-      "title": "K3S Pod CPU",
+      "title": "K3S Pod CPU Usage",
       "type": "timeseries"
     },
     {
@@ -433,14 +433,14 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "k3s_pod_cpu{instance=~\"$instance\", pod=~\"$pod\"} / ($__interval_ms * 1000000)",
+          "expr": "k3s_pod_cpu{instance=~\"$instance\", pod=~\"$pod\"} / 1000000000",
           "instant": false,
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
         }
       ],
-      "title": "% CPU Time",
+      "title": "CPU Usage",
       "type": "gauge"
     },
     {
@@ -535,7 +535,7 @@
           "refId": "A"
         }
       ],
-      "title": "Pod CPU",
+      "title": "Pod CPU Usage",
       "type": "timeseries"
     },
     {
@@ -945,7 +945,9 @@
   ],
   "refresh": "",
   "schemaVersion": 39,
-  "tags": [],
+  "tags": [
+    "truenas"
+  ],
   "templating": {
     "list": [
       {
@@ -1027,6 +1029,6 @@
   "timezone": "browser",
   "title": "TrueNAS Scale - Applications (k3s)",
   "uid": "cdzehbg69wav4c",
-  "version": 18,
+  "version": 20,
   "weekStart": ""
 }
