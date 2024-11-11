@@ -138,3 +138,11 @@ Both memeory statistics from TrueNAS are exported on the onside the physical mem
 |`k3s_pod_mem`|`pod` the pod name|`bytes`|The number of bytes of memory this pod is using.|
 |`k3s_pod_net`|<ul><li>`pod` the pod name</li><li>`direction` the direction of network traffic</li></ul>|`bytes`|The number of bytes in/out of the pod over the network interface.|
 
+## systemd services
+
+|Metric name|Labels|Unit|Description|
+|-----------|------|----|-----------|
+|`services_cpu`|`service` name of systemd service|`percent`|Percent of cpu usage per service. 100% = 1 core|
+|`services_iops`|<ul><li>`service` name of systemd service</li><li>`op` kind of operation</li></ul>|`ops/s`|Number of operations on I/O.|
+|`services_io`|<ul><li>`service` name of systemd service</li><li>`op` kind of operation</li></ul>|`kilobits/s`|I/O amount per service.|
+|`services_mem`|`service` name of systemd service|`MiB`|Memory usage per service.|
