@@ -73,7 +73,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -171,7 +171,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -269,7 +269,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -367,7 +367,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -438,7 +438,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -537,7 +537,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -636,7 +636,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -761,7 +761,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "$datasource"
+        "uid": "${DS_MIMIR}"
       },
       "fieldConfig": {
         "defaults": {
@@ -842,7 +842,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -937,7 +937,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1032,7 +1032,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1127,7 +1127,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1222,7 +1222,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1317,7 +1317,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1408,7 +1408,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "context_switches{instance=~\"$instance\"}",
@@ -1493,7 +1493,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "physical_memory{instance=~\"$instance\"}",
@@ -1563,7 +1563,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "swap{instance=~\"$instance\"}",
@@ -1658,7 +1658,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "memory_available{instance=~\"$instance\"}",
@@ -1683,7 +1683,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "memory_transparent_hugepages{instance=~\"$instance\"}",
@@ -1713,7 +1713,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1808,7 +1808,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -1917,7 +1917,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2013,7 +2013,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2083,7 +2083,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2182,7 +2182,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2281,7 +2281,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2380,7 +2380,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2479,7 +2479,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2575,7 +2575,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2667,7 +2667,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "interface_drops{instance=~\"$instance\", interface=~\"$interface\"}",
@@ -2686,7 +2686,7 @@
       "type": "row"
     },
     {
-      "collapsed": false,
+      "collapsed": true,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2694,410 +2694,411 @@
         "y": 21
       },
       "id": 168,
-      "panels": [],
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_MIMIR}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "percent"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 22
+          },
+          "id": 167,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "desc"
+            }
+          },
+          "pluginVersion": "11.3.0",
+          "targets": [
+            {
+              "editorMode": "code",
+              "expr": "services_cpu{instance=\"$instance\", service=~\"$services\"}",
+              "legendFormat": "{{service}}",
+              "range": true,
+              "refId": "A",
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${DS_MIMIR}"
+              }
+            }
+          ],
+          "title": "CPU Usage",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_MIMIR}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "mbytes"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 22
+          },
+          "id": 169,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "desc"
+            }
+          },
+          "pluginVersion": "11.3.0",
+          "targets": [
+            {
+              "editorMode": "code",
+              "expr": "services_mem{instance=\"$instance\", service=~\"$services\"}",
+              "legendFormat": "{{service}}",
+              "range": true,
+              "refId": "A",
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${DS_MIMIR}"
+              }
+            }
+          ],
+          "title": "Memory Usage",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_MIMIR}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "Kibits"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 30
+          },
+          "id": 170,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "desc"
+            }
+          },
+          "pluginVersion": "11.3.0",
+          "targets": [
+            {
+              "editorMode": "code",
+              "expr": "services_io{instance=\"$instance\", service=~\"$services\", op=\"read\"} * -1",
+              "legendFormat": "{{service}} - read",
+              "range": true,
+              "refId": "A",
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${DS_MIMIR}"
+              }
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${DS_MIMIR}"
+              },
+              "editorMode": "code",
+              "expr": "services_io{instance=\"$instance\", service=~\"$services\", op=\"write\"}",
+              "hide": false,
+              "instant": false,
+              "legendFormat": "{{service}} - write",
+              "range": true,
+              "refId": "B"
+            }
+          ],
+          "title": "Disk I/O",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_MIMIR}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unit": "iops"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 30
+          },
+          "id": 171,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "desc"
+            }
+          },
+          "pluginVersion": "11.3.0",
+          "targets": [
+            {
+              "editorMode": "code",
+              "expr": "services_iops{instance=\"$instance\", service=~\"$services\"}",
+              "legendFormat": "{{service}} - {{op}}",
+              "range": true,
+              "refId": "A",
+              "datasource": {
+                "type": "prometheus",
+                "uid": "${DS_MIMIR}"
+              }
+            }
+          ],
+          "title": "Disk IOps",
+          "type": "timeseries"
+        }        
+      ],
       "title": "Systemd Services",
       "type": "row"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${DS_MIMIR}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "barWidthFactor": 0.6,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "percent"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 22
-      },
-      "id": 167,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "desc"
-        }
-      },
-      "pluginVersion": "11.3.0",
-      "targets": [
-        {
-          "editorMode": "code",
-          "expr": "services_cpu{instance=\"$instance\", service=~\"$services\"}",
-          "legendFormat": "{{service}}",
-          "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
-        }
-      ],
-      "title": "CPU Usage",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${DS_MIMIR}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "barWidthFactor": 0.6,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "mbytes"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 22
-      },
-      "id": 169,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "desc"
-        }
-      },
-      "pluginVersion": "11.3.0",
-      "targets": [
-        {
-          "editorMode": "code",
-          "expr": "services_mem{instance=\"$instance\", service=~\"$services\"}",
-          "legendFormat": "{{service}}",
-          "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
-        }
-      ],
-      "title": "Memory Usage",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${DS_MIMIR}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "barWidthFactor": 0.6,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "Kibits"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 30
-      },
-      "id": 170,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "desc"
-        }
-      },
-      "pluginVersion": "11.3.0",
-      "targets": [
-        {
-          "editorMode": "code",
-          "expr": "services_io{instance=\"$instance\", service=~\"$services\", op=\"read\"} * -1",
-          "legendFormat": "{{service}} - read",
-          "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          },
-          "editorMode": "code",
-          "expr": "services_io{instance=\"$instance\", service=~\"$services\", op=\"write\"}",
-          "hide": false,
-          "instant": false,
-          "legendFormat": "{{service}} - write",
-          "range": true,
-          "refId": "B"
-        }
-      ],
-      "title": "Disk I/O",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${DS_MIMIR}"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "barWidthFactor": 0.6,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "iops"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 12,
-        "y": 30
-      },
-      "id": 171,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "multi",
-          "sort": "desc"
-        }
-      },
-      "pluginVersion": "11.3.0",
-      "targets": [
-        {
-          "editorMode": "code",
-          "expr": "services_iops{instance=\"$instance\", service=~\"$services\"}",
-          "legendFormat": "{{service}} - {{op}}",
-          "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
-        }
-      ],
-      "title": "Disk IOps",
-      "type": "timeseries"
     },
     {
       "collapsed": true,
@@ -3112,7 +3113,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3208,7 +3209,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3317,7 +3318,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3385,7 +3386,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3481,7 +3482,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3576,7 +3577,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3686,7 +3687,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3781,7 +3782,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3876,7 +3877,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3971,7 +3972,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4066,7 +4067,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4161,7 +4162,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4256,7 +4257,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4365,7 +4366,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4462,7 +4463,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4559,7 +4560,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4656,7 +4657,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4753,7 +4754,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4848,7 +4849,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4943,7 +4944,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -5038,7 +5039,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -5147,7 +5148,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -5243,7 +5244,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -5339,7 +5340,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "$datasource"
+            "uid": "${DS_MIMIR}"
           },
           "fieldConfig": {
             "defaults": {
@@ -5431,7 +5432,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "disk_busy{instance=~\"$instance\", disk=~\"$disk\"}",
@@ -5528,7 +5529,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "disk_utilization{instance=~\"$instance\", disk=~\"$disk\"}",
@@ -5624,7 +5625,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "abs(disk_iotime{instance=~\"$instance\", disk=~\"$disk\"})",
@@ -5720,7 +5721,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "disk_await{instance=~\"$instance\", disk=~\"$disk\"}",
@@ -5816,7 +5817,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "abs(disk_io_size{instance=~\"$instance\", disk=~\"$disk\"})",
@@ -5912,7 +5913,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "$datasource"
+                "uid": "${DS_MIMIR}"
               },
               "editorMode": "code",
               "expr": "disk_qops{instance=~\"$instance\", disk=~\"$disk\"}",
@@ -5941,7 +5942,7 @@
       {
         "current": {},
         "label": "Data source",
-        "name": "datasource",
+        "name": "DS_MIMIR",
         "options": [],
         "query": "prometheus",
         "refresh": 1,
@@ -5970,7 +5971,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "$datasource"
+          "uid": "${DS_MIMIR}"
         },
         "definition": "label_values(uptime{job=\"$job\"},instance)",
         "includeAll": false,
@@ -6011,7 +6012,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "$datasource"
+          "uid": "${DS_MIMIR}"
         },
         "definition": "label_values(disk_io{instance=\"$instance\", job=\"$job\"},disk)",
         "includeAll": true,
