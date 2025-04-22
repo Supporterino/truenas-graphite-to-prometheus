@@ -27,6 +27,9 @@
   </ol>
 </details>
 
+> [!IMPORTANT]  
+> The 25.04 release dropped a lot of metrics from the default Netdata plugins and migrated to custom python script to collect those metrics. This resulted in a loss of a lot of metrics and incompatibility of the dashboards. Dashboard updates will follow eventually.
+
 # About The Project
 
 The goal was to get the metrics from the TrueNAS reporting tap inside my normal monitoring stack which consists of prometheus and grafana. In earlier versions of TrueNAS this was possible by utilising the `collectd` graphite push service to push the metrics to a `graphite_exporter` instance which then converts the metrics to prometheus metrics based on the provided mapping file. In TrueNAS scale 23.10 the reporting system was changed to `netdata` and was missing the export feature all along. In `23.10.1` the export mechanism was added back in still lacking the ability to directly export the metrics to promeheus but still in the graphite form. But the metrics format changed due to the tool change.
@@ -57,11 +60,12 @@ See the [open issues](https://github.com/Supporterino/truenas-graphite-to-promet
 <!-- Supported versions -->
 ## Supported Versions
 Those are the supported and tested versions of TrueNAS in combination with this exporter. Feel free to create a PR with a tested flag if you use a version not mentioned here.
-|TrueNAS Version|Supported|Tested|
-|---------------|---------|------|
-|23.10.x|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
-|24.04.x|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
-|24.10.x|:white_check_mark:|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|TrueNAS Version|Supported|Exporter Version|Tested|
+|---------------|---------|----------------|------|
+|23.10.x|:white_check_mark:|`v1.x.x`|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|24.04.x|:white_check_mark:|`v1.x.x`|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|24.10.x|:white_check_mark:|`v1.x.x`|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
+|25.04.x|:white_check_mark:|`v2.x.x`|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
 
 
 <!-- GETTING STARTED -->
