@@ -27,8 +27,11 @@
   </ol>
 </details>
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > The 25.04 release dropped a lot of metrics from the default Netdata plugins and migrated to custom python script to collect those metrics. This resulted in a loss of a lot of metrics and incompatibility of the dashboards. Dashboard updates will follow eventually.
+
+> [!WARNING]
+> Going forward from exporter configuration version 2.1, you must also use the Netdata configuration included in the repository to restore the pre‑25.04 metrics. Instructions are provided below.
 
 # About The Project
 
@@ -45,15 +48,7 @@ The goal of this small repository is to provide you with a new `graphite_mapping
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Prepare environment
-- [x] Getting basic metrics extraction working
-- [x] Documentation
-    - [x] Start of git project
-    - [x] Fully detailed list of all metrics
-    - [x] Multiple dashboards with pictures
-- [x] Convert all metrics to prometheus metrics without catch all rules
-- [x] Unify all metrics to a similar schema
-- [ ] Add UPS metrics (Help wanted!)
+No changes are planned on my end right now.
 
 See the [open issues](https://github.com/Supporterino/truenas-graphite-to-prometheus/issues) for a full list of proposed features (and known issues).
 
@@ -73,9 +68,10 @@ Those are the supported and tested versions of TrueNAS in combination with this 
 
 ### TrueNAS Scale
 
-TrueNAS SCALE has its own ability to export reporting data to other apps or charts in the Graphite protocol (e.g. Netdata, Prometheus/Grafana). 
+TrueNAS SCALE can export reporting data using the Graphite protocol (used by Netdata, Prometheus/Grafana pipelines, etc.). Below is a clear, copyable guide to creating or editing a reporter for Prometheus (or other Graphite-compatible targets), plus an important Netdata configuration note and example commands.
 
-To create or edit the reporter for use with Prometheus:
+Creating or editing a reporter in TrueNAS SCALE
+
 1. Go to the `Reporting` tab and click the `Exporters` button on the top right.
 2. Click `Add` to create a new reporter or click the `Edit` pencil icon next to the reporter you wish to use.
 
@@ -87,10 +83,46 @@ Ensure the following fields are adjusted depending on your target app or chart, 
 * The hostname field should be choosen according to your needs it will later populate the `instance` label of your metrics
 * The `update every` field should match your scrape time
 * For `Send Names Instead Of Ids`, leave it blank and it will default to `true` (otherwise it may error out when trying to create the exporter).
- 
+* Destination IP and Port: point these to the host and port where your `graphite_exporter` (or another Graphite-compatible receiver) is listening.
+  
 ![Screenshot 2023-12-20 at 22 40 14](https://github.com/Supporterino/truenas-graphite-to-prometheus/assets/25184990/5a6cfd79-42ae-4173-bee5-42bb1d43d7b9)
 
-The destination ip and port need to be set to target your `graphite_exporter` I won't cover the setup process of this tool since it was already present for me. Feel free to open a PR with an recommended install method.
+> [!Note]
+> You must copy the provided `netdata.conf` from this repository to your TrueNAS host at `/etc/netdata/netdata.conf` so Netdata uses the configuration we provide.
+
+Example commands (run on the TrueNAS host or with appropriate privileges):
+```bash
+# Adjust the source path below to where you cloned/downloaded the repo
+sudo cp /path/to/repo/netdata.conf /etc/netdata/netdata.conf
+sudo chown root:root /etc/netdata/netdata.conf
+# Restart Netdata to pick up the new config (service name may vary)
+sudo systemctl restart netdata
+```
+
+> [!Important]
+> Netdata package updates may replace `/etc/netdata/netdata.conf`. You must re-copy/overwrite `/etc/netdata/netdata.conf` from this repository after each Netdata update until a permanent fix is available. I am working on a fix to make this persistent — in the meantime, reapply the config after updates.
+
+Optional: reapply script
+You can use a small script to reapply the config quickly:
+```bash
+#!/usr/bin/env bash
+REPO_CONF="/path/to/repo/netdata.conf"
+TARGET_CONF="/etc/netdata/netdata.conf"
+
+if [ ! -f "$REPO_CONF" ]; then
+  echo "Source config not found: $REPO_CONF"
+  exit 1
+fi
+
+sudo cp "$REPO_CONF" "$TARGET_CONF"
+sudo chown root:root "$TARGET_CONF"
+sudo systemctl restart netdata
+echo "netdata.conf applied and netdata restarted"
+```
+Make the script executable (e.g. `chmod +x apply-netdata-conf.sh`) and run it after TrueNAS updates.
+
+Working on a fix — PRs welcome
+I’m actively working on a solution that avoids manual re-copying on updates. Contributions, suggestions, or a persistent TrueNAS-compatible Netdata configuration method are welcome — please open a PR.
 
 ### graphite_exporter
 
@@ -108,10 +140,16 @@ To utilise the provided `graphite_mapping.conf` replace your existing conf of yo
 <!-- EXPOSED METRICS -->
 ## Exposed metrics
 
+> [!WARNING]
+> Outdated will be updated soon
+
 See [METRICS.md](METRICS.md) for the exposed metrics by this config.
 
 <!-- DASHBOARDS -->
 ## Dashboards
+
+> [!WARNING]
+> Outdated will be updated soon
 
 The dasboards are located inside the `dashboards` folder and are simple json files which can be imported into grafana und used with the metrics.
 
