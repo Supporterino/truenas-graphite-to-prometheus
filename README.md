@@ -1,37 +1,5 @@
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#supported-versions">Supported versions</a></li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#truenas-scale">TrueNAS Scale</a></li>
-        <li><a href="#graphite_exporter">graphite_exporter</a></li>
-        <li><a href="#running-exporter-inside-truenas">Running exporter inside truenas</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li>
-      <a href="#exposed-metrics">Exposed metrics</a>
-    </li>
-    <li><a href="#dashboards">Dashboards</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-  </ol>
-</details>
-
-> [!NOTE]  
-> The 25.04 release dropped a lot of metrics from the default Netdata plugins and migrated to custom python script to collect those metrics. This resulted in a loss of a lot of metrics and incompatibility of the dashboards. Dashboard updates will follow eventually.
-
 > [!WARNING]
-> Going forward from exporter configuration version 2.1, you must also use the Netdata configuration included in the repository to restore the pre‑25.04 metrics. Instructions are provided below.
+> Going forward from exporter configuration version 2.1, you must also use the Netdata configuration included in the repository to restore the pre‑25.04 metrics. Instructions are provided below. This action is taken since TrueNAS 25.04 dropped a lot of default metrics which doesn't make sense for me.
 
 # About The Project
 
@@ -43,16 +11,16 @@ The goal of this small repository is to provide you with a new `graphite_mapping
 
 * [graphite_exporter](https://github.com/prometheus/graphite_exporter)
 * [grafana](https://github.com/grafana/grafana)
-* [TrueNAS Scale 24.10](https://www.truenas.com/truenas-scale/)
+* [TrueNAS Scale 25.04](https://www.truenas.com/truenas-scale/)
 
-<!-- ROADMAP -->
 ## Roadmap
 
-No changes are planned on my end right now.
+- [ ] Update dashboards
+- [ ] Update metrics documentation -> move to unit label
+- [ ] Persist the custom `netdata.conf` across TrueNAS Updates
 
 See the [open issues](https://github.com/Supporterino/truenas-graphite-to-prometheus/issues) for a full list of proposed features (and known issues).
 
-<!-- Supported versions -->
 ## Supported Versions
 Those are the supported and tested versions of TrueNAS in combination with this exporter. Feel free to create a PR with a tested flag if you use a version not mentioned here.
 |TrueNAS Version|Supported|Exporter Version|Tested|
@@ -62,13 +30,11 @@ Those are the supported and tested versions of TrueNAS in combination with this 
 |24.10.x|:white_check_mark:|`v1.x.x`|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
 |25.04.x|:white_check_mark:|`v2.x.x`|:white_check_mark: by [@Supporterino](https://www.github.com/Supporterino)|
 
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
 ### TrueNAS Scale
 
-TrueNAS SCALE can export reporting data using the Graphite protocol (used by Netdata, Prometheus/Grafana pipelines, etc.). Below is a clear, copyable guide to creating or editing a reporter for Prometheus (or other Graphite-compatible targets), plus an important Netdata configuration note and example commands.
+TrueNAS SCALE can export reporting data using the Graphite protocol. Below is a clear, copyable guide to creating or editing a graphite_reporter for Prometheus, plus an important Netdata configuration note and example commands.
 
 Creating or editing a reporter in TrueNAS SCALE
 
@@ -83,7 +49,7 @@ Ensure the following fields are adjusted depending on your target app or chart, 
 * The hostname field should be choosen according to your needs it will later populate the `instance` label of your metrics
 * The `update every` field should match your scrape time
 * For `Send Names Instead Of Ids`, leave it blank and it will default to `true` (otherwise it may error out when trying to create the exporter).
-* Destination IP and Port: point these to the host and port where your `graphite_exporter` (or another Graphite-compatible receiver) is listening.
+* Destination IP and Port pointing to the host and port where your `graphite_exporter` is listening.
   
 ![Screenshot 2023-12-20 at 22 40 14](https://github.com/Supporterino/truenas-graphite-to-prometheus/assets/25184990/5a6cfd79-42ae-4173-bee5-42bb1d43d7b9)
 
@@ -100,7 +66,7 @@ sudo systemctl restart netdata
 ```
 
 > [!Important]
-> Netdata package updates may replace `/etc/netdata/netdata.conf`. You must re-copy/overwrite `/etc/netdata/netdata.conf` from this repository after each Netdata update until a permanent fix is available. I am working on a fix to make this persistent — in the meantime, reapply the config after updates.
+> TrueNAS updates replaces `/etc/netdata/netdata.conf`. You must re-copy/overwrite `/etc/netdata/netdata.conf` from this repository after each TrueNAS update until a permanent fix is available. I am working on a fix to make this persistent — in the meantime, reapply the config after updates.
 
 Optional: reapply script
 You can use a small script to reapply the config quickly:
@@ -121,9 +87,6 @@ echo "netdata.conf applied and netdata restarted"
 ```
 Make the script executable (e.g. `chmod +x apply-netdata-conf.sh`) and run it after TrueNAS updates.
 
-Working on a fix — PRs welcome
-I’m actively working on a solution that avoids manual re-copying on updates. Contributions, suggestions, or a persistent TrueNAS-compatible Netdata configuration method are welcome — please open a PR.
-
 ### graphite_exporter
 
 You obviously need a running `graphite_exporter` which is scrabed by your prometheus instance and is reachable by your TrueNAS instance to push metrics to.
@@ -132,12 +95,10 @@ You obviously need a running `graphite_exporter` which is scrabed by your promet
 
 Check [TRUENAS.md](TRUENAS.md) to see options to use this exporter directly inside of TrueNAS.
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 To utilise the provided `graphite_mapping.conf` replace your existing conf of your `graphite_exporter` and restart it. For the grafana dashboards you can simply import the provided `json` file.
 
-<!-- EXPOSED METRICS -->
 ## Exposed metrics
 
 > [!WARNING]
@@ -145,15 +106,10 @@ To utilise the provided `graphite_mapping.conf` replace your existing conf of yo
 
 See [METRICS.md](METRICS.md) for the exposed metrics by this config.
 
-<!-- DASHBOARDS -->
 ## Dashboards
-
-> [!WARNING]
-> Outdated will be updated soon
 
 The dasboards are located inside the `dashboards` folder and are simple json files which can be imported into grafana und used with the metrics.
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
