@@ -28,7 +28,7 @@ jobs:
     steps: 
       - name: Install cosign
         if: github.event_name != 'pull_request'
-        uses: sigstore/cosign-installer@d58896d6a1865668819e1d91763c7751a165e159 # v3.9.2
+        uses: sigstore/cosign-installer@7e8b541eb2e61bf99390e1afd4be13a184e9ebc5 # v3.10.1
       - name: Checkout repository
         uses: actions/checkout@v5
       - name: Set up QEMU
