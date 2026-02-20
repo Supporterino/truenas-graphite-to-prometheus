@@ -5974,7 +5974,7 @@
           "uid": "${DS_MIMIR}"
         },
         "definition": "label_values(uptime{job=\"$job\"},instance)",
-        "includeAll": false,
+        "includeAll": true,
         "name": "instance",
         "options": [],
         "query": {
