@@ -1,4 +1,4 @@
-FROM prom/graphite-exporter:v0.16.0
+FROM prom/graphite-exporter:v0.17.0
 
 LABEL maintainer="Supporterino <lars@roth-kl.de>"
 LABEL org.opencontainers.image.authors="Supporterino <lars@roth-kl.de>"
